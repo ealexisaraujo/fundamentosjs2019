@@ -34,3 +34,5 @@ function imprimeNombreEnMayuscula({ nombre }){//Desglosamos el objeto persona1, 
 }
 
 imprimeNombreEnMayuscula(persona1)
+imprimeNombreEnMayuscula(persona2)
+imprimeNombreEnMayuscula({nombre: 'Pepito'})
