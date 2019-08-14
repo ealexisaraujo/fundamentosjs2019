@@ -3,22 +3,13 @@
  * Comience aqui
  * *************
  */
-const math = require("./math") 
-const greet = require("./greetings")
-const hello = require("./greetings/hello")
-const cowsay = require("cowsay")
 
 
-console.log(math.add(4,5));
+const add = require("./src/addition")
+const sim = require("./src/intensive")
 
-console.log(greet.greet("alexis"));
-console.log(hello.sayHello("alexis"));
+// add.syncSum(4,3)
+// add.asyncSum(2,4)
 
-// Uso o manejando modulos externos con NPM y require()
-console.log(cowsay.say({
-  text: "Alexis",
-  e: "^^",
-  T: "U"
-}));
-
-
+sim.simulateSync()
+// sim.simulateAsync()
