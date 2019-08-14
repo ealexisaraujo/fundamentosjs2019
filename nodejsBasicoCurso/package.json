@@ -1,23 +1,15 @@
 {
-  "name": "nodejsbasico",
+  "name": "nodejsbasicocurso",
   "version": "1.0.0",
-  "description": "Repositorio para el curso básico de Node.js de Platzi.",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "say": "cowsay Hola"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/platzi/nodejsbasico.git"
-  },
-  "keywords": [
-    "nodejs",
-    "basico"
-  ],
-  "author": "Platzi",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/platzi/nodejsbasico/issues"
-  },
-  "homepage": "https://github.com/platzi/nodejsbasico#readme"
+  "dependencies": {
+    "cowsay": "^1.4.0"
+  }
 }
