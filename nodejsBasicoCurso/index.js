@@ -1,13 +1,14 @@
-function a() {
-  console.log("Estoy imprimiendo la llamada a la función A.");
-}
+/**
+ * *************
+ * Comience aqui
+ * *************
+ */
+const math = require("./math") 
+const greet = require("./greetings")
+const hello = require("./greetings/hello")
 
-function b() {
-  console.log("Estoy imprimiendo la llamada a la función B.");
-}
+console.log(math.add(4,5));
 
-function c() {
-  console.log("Estoy imprimiendo la llamada a la función C.");
-}
+console.log(greet.greet("alexis"));
+console.log(hello.sayHello("alexis"));
 
-a(); b(); c();
