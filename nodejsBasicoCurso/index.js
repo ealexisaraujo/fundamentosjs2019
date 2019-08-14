@@ -1,15 +1,23 @@
 /**
+ * 
  * *************
  * Comience aqui
  * *************
+ * 
  */
+ const call = require("./src/call")
 
 
-const add = require("./src/addition")
-const sim = require("./src/intensive")
+call.withCallback("Alexis Araujo", call.sync)
 
-// add.syncSum(4,3)
-// add.asyncSum(2,4)
+// getUser
+//   .then(function() {
+//     console.log('todo está bien en la vida')
+//   })
+//   .catch(function(message) {
+//     console.log(message)
+//   })
 
-sim.simulateSync()
-// sim.simulateAsync()
+call.withPromise("Alexis")
+  .then(name => {console.log(name) })
+  .catch(message => console.log(message)  )
