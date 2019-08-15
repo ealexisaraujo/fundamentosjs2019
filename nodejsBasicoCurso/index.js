@@ -7,17 +7,13 @@
  */
  const call = require("./src/call")
 
+ //Funcion normal
+//  call.greet("Pedro Alexis")
 
-call.withCallback("Alexis Araujo", call.sync)
+ //
+async function callWithAsync() {
+  const fullName = await call.withPromise("Alexis", "Lopez")
+  console.log(fullName); 
+}
 
-// getUser
-//   .then(function() {
-//     console.log('todo está bien en la vida')
-//   })
-//   .catch(function(message) {
-//     console.log(message)
-//   })
-
-call.withPromise("Alexis")
-  .then(name => {console.log(name) })
-  .catch(message => console.log(message)  )
+callWithAsync()

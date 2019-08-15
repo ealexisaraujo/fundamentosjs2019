@@ -1,16 +1,14 @@
 module.exports = {
-  sync: function(nombre) {
-      return `Hola ${nombre}! Bienvenido a Node.js`;
+  greet: function(nombreCompleto) {
+      console.log(`Hola ${nombreCompleto}! Sientes la asincronia?`);
   },
-  withCallback: function(nombre, cb) {
-      setTimeout(()=>{
-          console.log(cb(nombre))
-      }, 2000);
-  },
-  withPromise: function(nombre) {
+  withPromise: function(nombre, apellido) {
+      console.log("Llamando función con promesa...");
       return new Promise((resolve, reject)=>{
+          console.log("Ejecutando espera...");
           setTimeout(()=>{
-              resolve(nombre);
+              console.log("Resolviendo la espera!");
+              resolve(`${nombre} ${apellido}`);
           }, 5000); 
       })
   }
