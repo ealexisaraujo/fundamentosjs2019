@@ -12,6 +12,13 @@ class Juego {
 
   inicializar() {
     btnEmpezar.classList.add("hide");
+    this.nivel = 1;
+    this.colores = {
+      celeste,
+      violeta,
+      naranja,
+      verde
+    };
   }
 
   generarSecuencia() {
@@ -22,5 +29,5 @@ class Juego {
 }
 
 function empezarJuego() {
-  var juego = new Juego();
+  window.juego = new Juego();
 }
