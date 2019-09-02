@@ -6,7 +6,8 @@
 
 // console.log('Hola ' + nombre);
 
-var nombre = 'Alexis', apellido = 'Lopez'
-edad = 28
-console.log('Hola ' + nombre +' '+ apellido) 
-console.log('Tengo ' + edad + ' años') 
+var nombre = "Alexis",
+  apellido = "Lopez";
+edad = 28;
+console.log("Hola " + nombre + " " + apellido);
+console.log("Tengo " + edad + " años");

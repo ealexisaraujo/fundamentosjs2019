@@ -1,22 +1,22 @@
 var alexis = {
-  nombre: 'Alexis',
+  nombre: "Alexis",
   edad: 28
-}
+};
 
 var juan = {
-  nombre: 'Juan',
+  nombre: "Juan",
   edad: 13
-}
+};
 
-const MAYOR_DE_EDAD = 18
+const MAYOR_DE_EDAD = 18;
 
 // CONSTANTE ASGIGANDO UNA FUNCION
 // const esMayorDeEdad = function (persona)  {
 //   return persona.edad >= MAYOR_DE_EDAD
 // }
 
-const esMayorDeEdad = ({edad}) => edad >= MAYOR_DE_EDAD
-const esMenorDeEdad = persona =>  !esMayorDeEdad(persona)
+const esMayorDeEdad = ({ edad }) => edad >= MAYOR_DE_EDAD;
+const esMenorDeEdad = persona => !esMayorDeEdad(persona);
 
 // function imprimirSiEsMayoDeEdad(persona) {
 //   if (esMayorDeEdad(persona)) {
@@ -28,11 +28,10 @@ const esMenorDeEdad = persona =>  !esMayorDeEdad(persona)
 
 function permitirAcceso(persona) {
   if (esMayorDeEdad(persona)) {
-    console.log(`${persona.nombre} eres bienvenido`)
+    console.log(`${persona.nombre} eres bienvenido`);
   } else if (esMenorDeEdad(persona)) {
-    console.log(`${persona.nombre} tienes acceso denegado`)
+    console.log(`${persona.nombre} tienes acceso denegado`);
   }
 }
 
-
-permitirAcceso(juan)
+permitirAcceso(juan);
