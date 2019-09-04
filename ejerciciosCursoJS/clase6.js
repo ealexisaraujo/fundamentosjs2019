@@ -3,14 +3,14 @@
 //la mejor opción es crear un objeto. básicamente es una variable que contiene varias opciones.
 
 var persona1 = {
-  nombre: "Isabella",
-  apellido: "Ferreyro",
+  nombre: 'Isabella',
+  apellido: 'Ferreyro',
   edad: 29
 };
 
 var persona2 = {
-  nombre: "Dario",
-  apellido: "Ferreyro",
+  nombre: 'Dario',
+  apellido: 'Ferreyro',
   edad: 30
 };
 
@@ -22,7 +22,7 @@ function imprimirNombreEnMayusculas(nombre) {
 
 // una manera mas corta de escribir el mismo código
 function imprimirNombreMayus(persona1) {
-  console.log("funcion corta " + persona1.nombre.toUpperCase());
+  console.log('funcion corta ' + persona1.nombre.toUpperCase());
 }
 
 // imprimirNombreMayus(persona1)
@@ -32,10 +32,10 @@ function imprimirNombreMayus(persona1) {
 function imprimeNombreEnMayuscula({ nombre }) {
   //Desglosamos el objeto persona1, obteniendo el atributo nombre
   console.log(
-    "manera mejorada de escribir el nombre de " + nombre.toUpperCase()
+    'manera mejorada de escribir el nombre de ' + nombre.toUpperCase()
   );
 }
 
 imprimeNombreEnMayuscula(persona1);
 imprimeNombreEnMayuscula(persona2);
-imprimeNombreEnMayuscula({ nombre: "Pepito" });
+imprimeNombreEnMayuscula({ nombre: 'Pepito' });

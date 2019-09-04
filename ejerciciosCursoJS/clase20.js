@@ -40,8 +40,8 @@ Desarrollador.prototype.saludar = function() {
   );
 };
 
-const alexis = new Persona("Alexis", "Lopez", 1.7);
-const miguel = new Desarrollador("Miguel", "Araujo", 1.9);
+const alexis = new Persona('Alexis', 'Lopez', 1.7);
+const miguel = new Desarrollador('Miguel', 'Araujo', 1.9);
 alexis.saludar();
 miguel.saludar();
 // console.log(alexis);

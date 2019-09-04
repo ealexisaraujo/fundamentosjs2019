@@ -1,10 +1,10 @@
 var alexis = {
-  nombre: "Alexis",
+  nombre: 'Alexis',
   edad: 28
 };
 
 var juan = {
-  nombre: "Juan",
+  nombre: 'Juan',
   edad: 13
 };
 

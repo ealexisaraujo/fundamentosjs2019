@@ -1,12 +1,12 @@
 // Asincronismo
 // Clase: Multiples promesas en paralelo
 
-const API_URL = "https://swapi.co/api/";
-const PEOPLE_URL = "people/:id/";
+const API_URL = 'https://swapi.co/api/';
+const PEOPLE_URL = 'people/:id/';
 
 const obtenerPersonje = id =>
   new Promise((sepudo, todomal) => {
-    fetch(`${API_URL}${PEOPLE_URL.replace(":id", id)}`)
+    fetch(`${API_URL}${PEOPLE_URL.replace(':id', id)}`)
       .then(response => sepudo(response.json()))
       .catch(() => todomal(id));
   });

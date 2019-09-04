@@ -3,14 +3,14 @@
 //la mejor opción es crear un objeto. básicamente es una variable que contiene varias opciones.
 
 var persona1 = {
-  nombre: "Isabella",
-  apellido: "Ferreyro",
+  nombre: 'Isabella',
+  apellido: 'Ferreyro',
   edad: 29
 };
 
 var persona2 = {
-  nombre: "Dario",
-  apellido: "Ferreyro",
+  nombre: 'Dario',
+  apellido: 'Ferreyro',
   edad: 30
 };
 

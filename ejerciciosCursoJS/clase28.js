@@ -4,22 +4,22 @@ const getUser = new Promise(function(todoBien, todoMal) {
   // llamar a un api
   setTimeout(function() {
     // luego de 3 segundos
-    todoBien("se acabó el tiempo 3");
+    todoBien('se acabó el tiempo 3');
   }, 3000);
 });
 getUser
   .then(function() {
-    console.log("todo está bien en la vida");
+    console.log('todo está bien en la vida');
   })
   .catch(function(message) {
     console.log(message);
   });
 
 function obtenerPersonaje(id, callback) {
-  const API_URL = "https://swapi.co/api/";
-  const PEOPLE_URL = "people/:id/";
+  const API_URL = 'https://swapi.co/api/';
+  const PEOPLE_URL = 'people/:id/';
 
-  fetch(`${API_URL}${PEOPLE_URL.replace(":id", id)}`)
+  fetch(`${API_URL}${PEOPLE_URL.replace(':id', id)}`)
     .then(response => response.json())
     .then(data => {
       console.log(`Hola soy ${data.name}`);
@@ -27,7 +27,7 @@ function obtenerPersonaje(id, callback) {
         callback();
       }
     })
-    .catch(() => console.log("algo falló"));
+    .catch(() => console.log('algo falló'));
 }
 
 function onError(id) {

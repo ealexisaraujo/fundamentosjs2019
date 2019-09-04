@@ -1,27 +1,27 @@
 var alexis = {
-  nombre: "Alexis",
-  apellido: "Lopez",
+  nombre: 'Alexis',
+  apellido: 'Lopez',
   altura: 1.65,
   libros: 91
 };
 
 var alan = {
-  nombre: "Alan",
-  apellido: "Perez",
+  nombre: 'Alan',
+  apellido: 'Perez',
   altura: 1.86,
   libros: 105
 };
 
 var martin = {
-  nombre: "Martin",
-  apellido: "Gomez",
+  nombre: 'Martin',
+  apellido: 'Gomez',
   altura: 1.85,
   libros: 205
 };
 
 var paula = {
-  nombre: "Paula",
-  apellido: "Barros",
+  nombre: 'Paula',
+  apellido: 'Barros',
   altura: 1.65,
   libros: 5
 };

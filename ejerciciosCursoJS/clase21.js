@@ -31,9 +31,9 @@ class Desarrollador extends Persona {
   }
 }
 
-const alexis = new Persona("Alexis", "Lopez", 1.7);
-const arturo = new Desarrollador("Arturo", "Martinez", 1.7);
-const miguel = new Persona("Miguel", "Araujo", 1.9);
+const alexis = new Persona('Alexis', 'Lopez', 1.7);
+const arturo = new Desarrollador('Arturo', 'Martinez', 1.7);
+const miguel = new Persona('Miguel', 'Araujo', 1.9);
 arturo.saludar();
 alexis.soyAlto();
 miguel.saludar();

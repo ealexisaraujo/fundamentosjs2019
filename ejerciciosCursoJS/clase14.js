@@ -1,7 +1,7 @@
 // Inicio de clase estructuras repetitivas: while
 
 var alexis = {
-  nombre: "Alexis",
+  nombre: 'Alexis',
   edad: 28,
   peso: 75
 };

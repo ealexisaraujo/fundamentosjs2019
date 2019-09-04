@@ -1,12 +1,12 @@
 var persona1 = {
-  nombre: "Isabella",
-  apellido: "Ferreyro",
+  nombre: 'Isabella',
+  apellido: 'Ferreyro',
   edad: 29
 };
 
 var persona2 = {
-  nombre: "Dario",
-  apellido: "Ferreyro",
+  nombre: 'Dario',
+  apellido: 'Ferreyro',
   edad: 30
 };
 
@@ -76,6 +76,6 @@ function cumpleanos(persona) {
   return {
     ...persona,
     edad: persona.edad + 1,
-    sexo: "Masculino"
+    sexo: 'Masculino'
   };
 }

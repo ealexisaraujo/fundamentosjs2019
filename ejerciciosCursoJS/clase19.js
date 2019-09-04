@@ -18,7 +18,7 @@ Persona.prototype.soyAlto = function() {
       );
 };
 
-const alexis = new Persona("Alexis", "Lopez", 1.7);
-const miguel = new Persona("Miguel", "Araujo", 1.9);
+const alexis = new Persona('Alexis', 'Lopez', 1.7);
+const miguel = new Persona('Miguel', 'Araujo', 1.9);
 miguel.soyAlto();
 // console.log(alexis);

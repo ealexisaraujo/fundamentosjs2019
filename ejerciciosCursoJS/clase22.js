@@ -17,7 +17,7 @@ class Persona {
   soyAlto() {
     this.altura >= 1.8
       ? console.log(
-          `Hola me llamo ${this.nombre} ${this.apellido} ${this.altura} y soy alto`
+          s`Hola me llamo ${this.nombre} ${this.apellido} ${this.altura} y soy alto`
         )
       : console.log(
           `Hola me llamo ${this.nombre} ${this.apellido} ${this.altura} y no soy alto`
@@ -46,9 +46,9 @@ function responderSaludo(nombre, apellido, esDev) {
   }
 }
 
-const alexis = new Persona("Alexis", "Lopez", 1.7);
-const arturo = new Desarrollador("Arturo", "Martinez", 1.7);
-const miguel = new Persona("Miguel", "Araujo", 1.9);
+const alexis = new Persona('Alexis', 'Lopez', 1.7);
+const arturo = new Desarrollador('Arturo', 'Martinez', 1.7);
+const miguel = new Persona('Miguel', 'Araujo', 1.9);
 
 arturo.saludar(responderSaludo);
 alexis.saludar();

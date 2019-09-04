@@ -28,11 +28,11 @@
 //
 // --------------> CUANDO ES FALSO
 var fernando = {
-  nombre: "Fernando"
+  nombre: 'Fernando'
 };
 
 var otraPersona = {
-  nombre: "Fernando"
+  nombre: 'Fernando'
 };
 //                 Por mas que sean lo mismo los objetos en estan en diferentes
 //                 posiciones en la memoria RAM
@@ -42,7 +42,7 @@ var otraPersona = {
 //
 // ---------------> CUANDO ES VERDADERO
 var miguel = {
-  nombre: "Miguel"
+  nombre: 'Miguel'
 };
 
 var segundaPersona = miguel;

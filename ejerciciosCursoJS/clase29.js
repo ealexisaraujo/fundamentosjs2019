@@ -2,10 +2,10 @@
 // Clase: Promesas Encadenadas
 
 function obtenerPersonaje(id) {
-  const API_URL = "https://swapi.co/api/";
-  const PEOPLE_URL = "people/:id/";
+  const API_URL = 'https://swapi.co/api/';
+  const PEOPLE_URL = 'people/:id/';
 
-  return fetch(`${API_URL}${PEOPLE_URL.replace(":id", id)}`)
+  return fetch(`${API_URL}${PEOPLE_URL.replace(':id', id)}`)
     .then(response => response.json())
     .catch(() => console.log(`Error al obtener el personaje ${id}`));
 }

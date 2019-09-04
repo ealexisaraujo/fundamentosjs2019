@@ -1,8 +1,8 @@
-const celeste = document.getElementById("celeste");
-const violeta = document.getElementById("violeta");
-const naranja = document.getElementById("naranja");
-const verde = document.getElementById("verde");
-const btnEmpezar = document.getElementById("btnEmpezar");
+const celeste = document.getElementById('celeste');
+const violeta = document.getElementById('violeta');
+const naranja = document.getElementById('naranja');
+const verde = document.getElementById('verde');
+const btnEmpezar = document.getElementById('btnEmpezar');
 const ULTIMO_NIVEL = 2;
 
 class Juego {
@@ -27,10 +27,10 @@ class Juego {
   }
 
   toggleBtnEmpezar() {
-    if (btnEmpezar.classList.contains("hide")) {
-      btnEmpezar.classList.remove("hide");
+    if (btnEmpezar.classList.contains('hide')) {
+      btnEmpezar.classList.remove('hide');
     } else {
-      btnEmpezar.classList.add("hide");
+      btnEmpezar.classList.add('hide');
     }
   }
 
@@ -49,25 +49,25 @@ class Juego {
   transformarNumeroAColor(numero) {
     switch (numero) {
       case 0:
-        return "celeste";
+        return 'celeste';
       case 1:
-        return "violeta";
+        return 'violeta';
       case 2:
-        return "naranja";
+        return 'naranja';
       case 3:
-        return "verde";
+        return 'verde';
     }
   }
 
   transformarColorANumero(color) {
     switch (color) {
-      case "celeste":
+      case 'celeste':
         return 0;
-      case "violeta":
+      case 'violeta':
         return 1;
-      case "naranja":
+      case 'naranja':
         return 2;
-      case "verde":
+      case 'verde':
         return 3;
     }
   }
@@ -80,25 +80,25 @@ class Juego {
   }
 
   iluminarColor(color) {
-    this.colores[color].classList.add("light");
+    this.colores[color].classList.add('light');
     setTimeout(() => this.apagarColor(color), 350);
   }
   apagarColor(color) {
-    this.colores[color].classList.remove("light");
+    this.colores[color].classList.remove('light');
   }
 
   agregarEventosClick() {
-    this.colores.celeste.addEventListener("click", this.elegirColor);
-    this.colores.verde.addEventListener("click", this.elegirColor);
-    this.colores.violeta.addEventListener("click", this.elegirColor);
-    this.colores.naranja.addEventListener("click", this.elegirColor);
+    this.colores.celeste.addEventListener('click', this.elegirColor);
+    this.colores.verde.addEventListener('click', this.elegirColor);
+    this.colores.violeta.addEventListener('click', this.elegirColor);
+    this.colores.naranja.addEventListener('click', this.elegirColor);
   }
 
   eliminarEventosClick() {
-    this.colores.celeste.removeEventListener("click", this.elegirColor);
-    this.colores.verde.removeEventListener("click", this.elegirColor);
-    this.colores.violeta.removeEventListener("click", this.elegirColor);
-    this.colores.naranja.removeEventListener("click", this.elegirColor);
+    this.colores.celeste.removeEventListener('click', this.elegirColor);
+    this.colores.verde.removeEventListener('click', this.elegirColor);
+    this.colores.violeta.removeEventListener('click', this.elegirColor);
+    this.colores.naranja.removeEventListener('click', this.elegirColor);
   }
 
   elegirColor(ev) {
@@ -124,13 +124,13 @@ class Juego {
   }
 
   ganoElJuego() {
-    swal("Jugador", "Felicitaciones, ganaste el juego!", "success").then(
+    swal('Jugador', 'Felicitaciones, ganaste el juego!', 'success').then(
       this.inicializar
     );
   }
 
   perdioElJuego() {
-    swal("Jugador", "Lo lamentamos, perdiste :(", "error").then(() => {
+    swal('Jugador', 'Lo lamentamos, perdiste :(', 'error').then(() => {
       this.eliminarEventosClick();
       this.inicializar();
     });

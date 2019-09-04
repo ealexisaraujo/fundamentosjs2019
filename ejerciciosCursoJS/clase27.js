@@ -1,10 +1,10 @@
 // Asincronismo
 // Clase: Manejo de errores con callbacks
 function obtenerPersonaje(id, callback) {
-  const API_URL = "https://swapi.co/api/";
-  const PEOPLE_URL = "people/:id/";
+  const API_URL = 'https://swapi.co/api/';
+  const PEOPLE_URL = 'people/:id/';
 
-  fetch(`${API_URL}${PEOPLE_URL.replace(":id", id)}`)
+  fetch(`${API_URL}${PEOPLE_URL.replace(':id', id)}`)
     .then(response => response.json())
     .then(data => {
       console.log(`Hola soy ${data.name}`);
@@ -12,7 +12,7 @@ function obtenerPersonaje(id, callback) {
         callback();
       }
     })
-    .catch(() => console.log("algo falló"));
+    .catch(() => console.log('algo falló'));
 }
 
 obtenerPersonaje(1, function() {
